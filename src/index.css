@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: 500;
+  margin-left: 10px;
+  font-size: 5rem;
+  opacity: 0.4;
+  color: rgb(176, 57, 192);
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.edit-mode {
+  color: #ccc;
+}
+
+/* Form & Input */
+.form-input {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Buttons */
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+div.task svg {
+  height: 20px;
+}
+
+
+div.task {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px 19px;
+  margin: 20px 5px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+div.task svg {
+  height: 20px;
+  margin-right: 8px;
+  fill:rgb(126, 122, 122)
+  
+}
+
+div.task.done {
+  opacity: 0.3 ;
+  text-decoration: line-through;
+}
+
+div.task-name, div.task form {
+  flex-grow: 1;
+}
+
+div.task span {
+  position: relative;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button.trash {
+  background: none;
+  border: none;
+}
+
+button.trash svg {
+  fill: rgb(251, 23, 23);
+  height: 17px;
+  display: flex;
+}
+
+div.task input {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 2px 4px ;
+}
+
+
+@media (max-width: 500px) {
+  .items li {
+    width: 100%;
+  }
+}
