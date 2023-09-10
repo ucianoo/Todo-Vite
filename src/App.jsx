@@ -1,5 +1,4 @@
 import  {useEffect, useState} from 'react'
-import {nanoid} from 'nanoid'
 import TaskForm from "./TaskForm";
 import Task from './Task'
 import Header from "./Header";
@@ -22,7 +21,7 @@ function App() {
       return[...prev, {
         name:name, 
         done:false, 
-        id: nanoid() }]
+      }]
     })
     
   }

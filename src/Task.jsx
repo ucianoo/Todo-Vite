@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Task = ({ name, done, onToggle, onTrash, onRename }) => {
+const Task = ({ name,  onTrash, onRename }) => {
     const[editMode, setEditMode] = useState(false);
   return (
     <div className='task'>
